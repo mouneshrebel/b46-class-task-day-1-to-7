@@ -14,8 +14,8 @@ Ans : for is commenly used for some
 Ans :
     var Details = [
     {
-    "name" : "Surya Perumal",
-    "age" : 23,
+    "name" : "mounesh",
+    "age" : 26,
     "City" : "Dharmapuri",
     "Phone" : 6244599932,
     "Skills" :[
