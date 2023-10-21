@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container {
+     height: 100vh;
+     width: 100vw;
+     font-family:  default;
+     position: relative;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.form_div {
+    position: absolute;
+    margin:10px;
+}
+
+#email {
+     width: 20rem;
+}
+#input_last{
+    position: absolute;
+    left: 12rem;
+}
+
+#first{
+    position: absolute;
+    top: 2.4rem;
+    left: 0rem;
+    font-size: small;
+}
+
+#last {
+    position: absolute;
+    top: 2.4rem;
+    right: 9.5rem;
+    font-size: small;
+}
+
+.rating-star {
+     position: absolute;
+     top: 8rem;
+     left: 0.6rem;
+}
+
+.tables_div{
+      position: absolute;
+      top: 15rem;
+      left: 0.6rem;
+}
+
+.tables_div table,tr,td,th {
+       border-collapse: collapse;
+       padding: 6px;
+       text-align: center;
+       width: 100vw;
+       flex-wrap: wrap;
+}
+
+.another-table_div {
+     position: absolute;
+     top: 25.4rem;
+     left: 0.6rem;
+}
+
+.another-table_div table,tr,td,th {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.summary {
+    position: absolute;
+    top: 37rem;
+    left: 0.6rem;
+}
+.button {
+  position: absolute;
+  top: 44rem;
+  left: 0.6rem;
+  border: none;
+  padding: 10px;
+  background-color: rgb(215, 212, 212);
+}

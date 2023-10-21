@@ -1,0 +1,73 @@
+1. How to compare two JSON have the same properties without order?
+    a. let obj1 = {name:"Person",age:5};
+    b. let obj2 = {age:5 , name:"Person"};
+    
+    Ans :  let obj1 = {name : "Person", age : 5};
+  let obj2  = {age : 5 , name : "Person"};
+
+  function array(Jsonobj1, Jsonobj2){
+  let obj1Keys = Object.keys(Jsonobj1);
+  let obj2Keys = Object.keys(Jsonobj2)
+  
+  console.log(obj1['name']);
+  console.log(obj2['age'])
+  
+  //we use the if condition for obj1 & obj2 length true or false
+  if( obj1Keys.length !=  obj2Keys.length){
+    return false
+  }
+
+  for(let objKey of obj1Keys){
+     if(obj1[objKey] != obj2[objKey]){
+        return false
+     }
+  }
+  return true
+}
+console.log(array(obj1 , obj2))
+      
+2.  use the rest countries "API URL -> https://restcountries.com/v3.1/all and display 
+    all the country flags in the console?
+    
+    Ans :  let xmlRequest = new XMLHttpRequest;
+ 
+           xmlRequest.open('Get',"https://restcountries.com/v3.1/all");
+
+           xmlRequest.responseType = "json";
+
+           xmlRequest.send();
+
+           xmlRequest.onload = function () {
+           var responseObj = xmlRequest.response;
+           if(xmlRequest.status > 0) {
+           responseObj.forEach (function (country) {
+           console.log(country.flag);
+           })
+          }else{
+               console.log("Number of flags :" , xmlRequest.status);
+           }
+         };
+
+
+    
+3. use the same rest countries and print all countries names,regions. sub-region and populations?
+    
+    Ans :
+           let xmlRequest = new XMLHttpRequest;
+ 
+           xmlRequest.open('Get',"https://restcountries.com/v3.1/all");
+
+           xmlRequest.responseType = "json";
+
+           xmlRequest.send();
+
+          xmlRequest.onload = function () {
+          var responseObj = xmlRequest.response;
+          if(xmlRequest.status > 0) {
+          responseObj.forEach (function (data) {
+         console.log(data.name.official,  data.region , data.subregion , data.population );
+       })
+       }else{
+          console.log("Number of flags :" , xmlRequest.status);
+       }
+      };

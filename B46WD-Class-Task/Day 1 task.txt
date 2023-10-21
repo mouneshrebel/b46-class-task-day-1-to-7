@@ -1,0 +1,33 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+
+Ans :     HTTP1:                    
+     In http1 is normaly
+     load the source the 
+     data one after one in
+     that time one source 
+     can't be load by http1
+     it will block the all other 
+     soucre
+     
+     HTTP2:
+      In the http2 is normaly 
+      send the source of data in bundle 
+      by using the TCP in that
+      no other data source will not block 
+      other data
+     
+2.Write a blog about objects and its internal representation in Javascript
+ 
+ Ans: Objects in javascript used to the store the values in the key
+      by calling the keys we can access the value by dynamically.
+      eg: var Person = {Name :"Mounesh",Age : 26 ,City :"chennai"};
+         console.log(Person.Name) // output Mounesh
+         console.log(Person[Age]) // output 26
+ 
+      By using the Person we access the keys, we can change the values by (.)
+      console.log(Person.Age) = 26
+  
+3.codekata practice
+
+ Ans: CodeKata it help to solve the problems and it's very helpfull to
+      grow the confident in  coding.

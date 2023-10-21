@@ -1,0 +1,54 @@
+2. Write a “person” class to hold all the details?
+Ans: 
+    class Person {
+  constructor(firstName, lastName, age) {
+    this.firstName = "mounesh";
+    this.lastName = "rebel";
+    this.age = 23;
+  }
+
+  getFullName() {
+    return this.firstName + ' ' + this.lastName +" age is " + this.age;
+  }
+}
+let persons = new Person();
+console.log(`FirstName :${persons.firstName}`);
+console.log(`LastName :${persons.lastName}`);
+console.log(`Age :${persons.age}`);
+console.log(persons.getFullName());
+
+  output : 
+       FirstName :mounesh
+       LastName :rebel
+       Age :23
+      Surya Perumal age is 23
+  
+3. write a class to calculate the uber price?
+Ans: 
+   class Uber {
+  constructor(distance, duration, basecharge) {
+    this.distance = 2;
+    this.duration = 20;
+    this.basecharge = 30;
+  }
+
+ 
+  calculatePrice() {
+    
+    const BASE_PRICE_PER_KM = 0.5;
+    const BASE_PRICE_PER_MINUTE = 0.1;
+
+    const totaldistance = this.distance * BASE_PRICE_PER_KM * this.basecharge;
+    const totalduration = this.duration * BASE_PRICE_PER_MINUTE * this.basecharge;
+
+  
+    const totalPrice = totaldistance + totalduration;
+
+    return totalPrice;
+  }
+};
+ 
+let Ubercost = new Uber();
+console.log(`Total Uber Cost is ${Ubercost.calculatePrice()}rs`)
+
+  output: Total Uber Cost is 90rs

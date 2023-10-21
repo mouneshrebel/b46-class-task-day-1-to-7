@@ -1,0 +1,10 @@
+1.write a blog on the Difference between document & window objects
+
+Ans : 
+      Document Object :
+      Every HTML document when it get loaded in the window becomes document object and 
+      it contains the content of the pages.
+      
+      Window Object :
+      Window object is represents an open window in browser.when the HTML document 
+      contains the content that time browser create the one window Object.

@@ -1,0 +1,70 @@
+1 . For the given iterate over all for loops(for,for in, for of,forEach)
+
+Ans : for is commenly used for some 
+      * for(initialization,condition,iteration){}
+      
+      for in is used for the object
+      * for(variable in object){}
+      
+      for of is used for the array
+      * for(variable of iterable){}
+      
+2 . create your own reseume data in JSON format
+
+Ans :
+    var Details = [
+    {
+    "name" : "Surya Perumal",
+    "age" : 23,
+    "City" : "Dharmapuri",
+    "Phone" : 6244599932,
+    "Skills" :[
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "BootStrap",
+        "React",
+        "Python",
+    ],
+    "experience": [
+        {
+          "company": "zzz Company",
+          "position": "Junior Software Engineer",
+          
+        }
+    ],
+    "education": [
+        {
+          "school": "University of xyz",
+          "degree": "Bachelor of Bio chemistry",
+        }
+    ]
+},
+
+
+]
+
+console.log(Details);
+
+for(var i = 0; i < Details.length; i++){
+    var resume = Details[i]
+    console.log(resume.name, "",resume.age,"",resume.City, "",resume.Skills[0]);
+}
+
+resume.education.forEach((data =>{
+    console.log(data.school);
+    console.log(data.degree);
+}))
+
+
+
+3 . Read the difference betweeen window,screen and document in JavaScript
+
+  Ans : Window
+        The window is an object it represent the browser window loaded.
+        
+        Screen
+        The screen is object it what we are seen physically in the laptop or mobile
+        
+        document
+        The document is what the page have content like html and css
